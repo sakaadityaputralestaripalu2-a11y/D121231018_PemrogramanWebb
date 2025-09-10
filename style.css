@@ -1,0 +1,91 @@
+/* ====== Base Style ====== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1f1f1f, #1e3c72, #2a5298);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* ====== Container ====== */
+.container {
+  display: flex;
+  background: rgba(30, 30, 30, 0.85);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.8);
+  max-width: 900px;
+  width: 90%;
+  padding: 30px;
+  backdrop-filter: blur(4px);
+}
+
+/* ====== Profile Image ====== */
+.profile-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* ====== Content ====== */
+.content {
+  flex: 2;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #00c6ff; 
+}
+
+.content p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+/* ====== Buttons ====== */
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.buttons a {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.buttons .primary {
+  background: #00c6ff;
+  color: #1f1f1f;
+  box-shadow: 0 4px 12px rgba(0, 198, 255, 0.5);
+}
+
+.buttons .primary:hover {
+  background: #00a2d4;
+  color: #fff;
+}
+
+.buttons .secondary {
+  background: transparent;
+  border: 2px solid #00c6ff;
+  color: #00c6ff;
+}
+
+.buttons .secondary:hover {
+  background: #00c6ff;
+  color: #1f1f1f;
+}
